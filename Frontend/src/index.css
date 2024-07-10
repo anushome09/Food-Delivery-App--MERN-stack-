@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: outfit;
 }
 
 body {
@@ -11,4 +14,28 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.app {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+/* this is the logic for the basket, if item is there them the dot will appear*/
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
 }
